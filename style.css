@@ -1,0 +1,160 @@
+/* Container upgrade: lebih tinggi dan fokus */
+.container {
+    width: 60%;
+    max-width: 820px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 22px;
+    box-shadow: 0 18px 32px rgba(120,70,140,0.15);
+    min-height: 500px;
+    text-align: center;
+}
+
+/* Title upgrade */
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #6a55a6;
+    margin-bottom: 5px;
+}
+
+/* Button upgrade */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #a68eff, #8f78e6);
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(120,70,140,0.25);
+}
+
+/* Buttons kecil */
+.button.small {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* Delete Button */
+.button.delete {
+    background: #ff7a8a;
+    box-shadow: 0 4px 10px rgba(255,80,110,0.25);
+}
+.button.delete:hover { background: #ff5268; }
+
+/* Tabel */
+table {
+    width:100%;
+    border-radius: 12px;
+    overflow:hidden;
+    margin-top: 20px;
+}
+table th {
+    background: #e6ddff;
+    color: #4a3b75;
+    padding: 12px;
+}
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee8ff;
+    font-size: 15px;
+}
+
+/* Status Visual */
+.status-Sudah {
+    color: #1f8855;
+    font-weight: 700;
+}
+.status-Belum {
+    color: #e02424;
+    font-weight: 700;
+}
+
+/* Motivasi */
+.motivation {
+    margin-top: 25px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #fff4ff;
+    color: #754c74;
+    font-size: 17px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+.motivation.success {
+    background:#e5fff2;
+    color:#207f54;
+    font-weight:700;
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(8px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+.form-card {
+    text-align: left !important;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.input-form label {
+    font-weight: 600;
+    color: #6b5499;
+    font-size: 15px;
+}
+
+.input-form input {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid #d7ccf3;
+    outline: none;
+    transition: 0.25s;
+    font-size: 15px;
+    background: #faf8ff;
+}
+
+.input-form input:focus {
+    border-color: #9a85e0;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(155,143,199,0.25);
+}
+
+.icon {
+    font-size: 19px;
+    vertical-align:-4px;
+    color: #8b73ce;
+}
+
+.submit-btn {
+    margin-top: 14px;
+    align-self: center;
+    padding: 12px 22px;
+}
+
+.back-btn {
+    margin-top: 18px;
+    background: #c9b6ff;
+}
+
+.back-btn:hover {
+    background: #bca8ff;
+}
