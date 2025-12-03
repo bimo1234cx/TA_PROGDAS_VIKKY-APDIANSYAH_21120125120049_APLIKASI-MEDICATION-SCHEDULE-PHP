@@ -37,7 +37,7 @@ session_start();
                 $status = $ob->getStatus($today);
                 if ($status !== 'Sudah') $allDone = false;
 
-                // warna status
+        
                 $cls = ($status == 'Sudah') ? 'status-Sudah' : 'status-Belum';
 
                 echo "<tr>
@@ -65,7 +65,7 @@ session_start();
     <br>
 
     <?php
-    // pesan motivasi di bagian bawah
+    
     if ($any && $allDone) {
         echo "<p class='motivation success'>Hebat! Semua obat sudah diminum hari ini! 🎉💪</p>";
     } else {

@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
 
     if (isset($_SESSION['obats'][$id])) {
         unset($_SESSION['obats'][$id]);
-        // rapikan indeks
+        
         $_SESSION['obats'] = array_values($_SESSION['obats']);
     }
 }
