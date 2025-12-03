@@ -29,7 +29,7 @@ class Obat {
         return isset($this->status[$date]) ? $this->status[$date] : 'Belum';
     }
 
-    
+    // set status untuk tanggal tertentu
     public function setStatus($date, $val) {
         $this->status[$date] = $val;
     }
