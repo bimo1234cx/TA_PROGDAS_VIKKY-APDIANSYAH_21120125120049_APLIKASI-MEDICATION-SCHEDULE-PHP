@@ -60,20 +60,18 @@ table {
     border-radius: 12px;
     overflow:hidden;
     margin-top: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
 table th {
     background: #e6ddff;
     color: #4a3b75;
     padding: 12px;
-    text-align: center;
-    vertical-align: middle;
 }
 table td {
     padding: 12px;
     border-bottom: 1px solid #eee8ff;
     font-size: 15px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* Status Visual */
