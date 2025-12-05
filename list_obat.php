@@ -41,7 +41,7 @@ session_start();
         
                 $cls = ($status == 'Sudah') ? 'status-Sudah' : 'status-Belum';
 
-                
+                $endDate = date('Y-m-d', strtotime($ob->start_date . " + " . ($ob->days - 1) . " days"));
 
                 echo "<tr>
                         <td>$no</td>
