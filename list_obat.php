@@ -21,6 +21,7 @@ session_start();
             <th>Dosis</th>
             <th>Jam</th>
             <th>Status</th>
+            <th>Hari Selesai</th>
             <th>Aksi</th>
         </tr>
 
@@ -40,12 +41,15 @@ session_start();
         
                 $cls = ($status == 'Sudah') ? 'status-Sudah' : 'status-Belum';
 
+                $endDate = date('Y-m-d', strtotime($ob->start_date . " + " . ($ob->days - 1) . " days"));
+
                 echo "<tr>
                         <td>$no</td>
                         <td>{$ob->nama}</td>
                         <td>{$ob->dosis}</td>
                         <td>{$ob->jam}</td>
                         <td class='$cls'>{$status}</td>
+                        <td>$endDate</td>
                         <td>
                             <a href='update_status.php?id=$id&action=mark' class='button small'>Sudah</a>
                             <a href='delete.php?id=$id' class='button small delete'>Hapus</a>
